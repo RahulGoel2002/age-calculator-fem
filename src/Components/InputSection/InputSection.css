@@ -1,0 +1,86 @@
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+.input-section {
+    display: flex;
+    padding-bottom: 45px;
+    border-bottom: 2px solid var(--Off-white);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 20%;
+}
+
+.inp > label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: var(--Smokey-grey);
+}
+
+.inp > input {
+    /* outline: 1px solid var(--Light-grey); */
+    border: 1px solid var(--Light-grey);
+    font-size: 1.8rem;
+    width: 70%;
+    font-style: italic;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.inp > input:focus {
+    outline: 1px solid var(--Purple);
+
+    /* border: 1px solid var(--Purple); */
+}
+
+.inp > input::placeholder {
+    color: var(--Smokey-grey);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-style: normal;
+}
+
+.warn {
+    font-size: 0.75rem;
+}
+
+.warning {
+    color: var(--Light-red);
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(100% - 40px);
+    left: calc(100% - 80px);
+    background-color: var(--Purple);
+    border: none;
+    transition: background-color 200ms;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--Off-black);
+    transition: background-color 200ms;
+}
